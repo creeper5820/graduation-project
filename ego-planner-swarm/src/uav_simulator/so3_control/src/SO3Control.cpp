@@ -109,17 +109,17 @@ void SO3Control::calculateControl(const Eigen::Vector3d &des_pos,
   Eigen::Matrix3d R;
   R << b1c, b2c, b3c;
 
-  // 限制 roll：允许 ±10°，保留 yaw 和 pitch
-  double roll  = atan2(R(2,1), R(2,2));
-  double pitch = asin(-std::clamp(R(2,0), -1.0, 1.0));
-  double yaw   = atan2(R(1,0), R(0,0));
-  double max_roll = 10.0 * M_PI / 180.0;
-  roll = std::clamp(roll, -max_roll, max_roll);
+  // 限制 roll：投影 body Y 到水平面，保留 yaw 和 pitch
+  Eigen::Vector3d b3 = R.col(2);
+  Eigen::Vector3d b2_proj(0, 0, 0);
+  b2_proj.head<2>() = R.col(1).head<2>();
+  if (b2_proj.head<2>().norm() > 1e-6) b2_proj.head<2>().normalize();
+  else b2_proj = Eigen::Vector3d(0, 1, 0);
+  Eigen::Vector3d b1_proj = b2_proj.cross(b3).normalized();
+  b2_proj = b3.cross(b1_proj).normalized();
 
   Eigen::Matrix3d R_clamped;
-  R_clamped = Eigen::AngleAxisd(yaw,   Eigen::Vector3d::UnitZ()) *
-              Eigen::AngleAxisd(pitch, Eigen::Vector3d::UnitY()) *
-              Eigen::AngleAxisd(roll,  Eigen::Vector3d::UnitX());
+  R_clamped << b1_proj, b2_proj, b3;
 
   orientation_ = Eigen::Quaterniond(R_clamped);
 }
