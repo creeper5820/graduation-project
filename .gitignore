@@ -1,0 +1,8 @@
+diffphys_ws/build/
+diffphys_ws/install/
+diffphys_ws/log/
+*.pyc
+__pycache__/
+.DS_Store
+*.egg-info/
+ego-planner-swarm/.git

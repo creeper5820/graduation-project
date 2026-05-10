@@ -1,0 +1,254 @@
+{
+  "total_samples": 59308,
+  "duration_s": 59.9,
+  "start_position": [
+    11.43,
+    0.44,
+    0.97
+  ],
+  "final_position": [
+    14.08,
+    0.5,
+    0.01
+  ],
+  "flight_distance": 14.89,
+  "avg_speed": 0.249,
+  "goal_position": [
+    15.0,
+    0.0,
+    1.0
+  ],
+  "goal_distance": 1.44,
+  "goal_reached": false,
+  "mean_cross_track_m": 1.013,
+  "max_cross_track_m": 1.107,
+  "median_cross_track_m": 1.107,
+  "final_progress": 0.939,
+  "max_progress": 1.0,
+  "path_length_m": 15.0,
+  "path_heading_rad": 0.0,
+  "drone_heading_rad": 1.482,
+  "heading_error_rad": 1.482,
+  "trajectory_samples": [
+    {
+      "t": 0.0,
+      "pos": [
+        11.43,
+        0.44,
+        0.97
+      ],
+      "cross_track_m": 0.44,
+      "progress": 0.76
+    },
+    {
+      "t": 3.1,
+      "pos": [
+        14.93,
+        0.82,
+        1.03
+      ],
+      "cross_track_m": 0.82,
+      "progress": 1.0
+    },
+    {
+      "t": 6.1,
+      "pos": [
+        16.0,
+        -0.1,
+        1.09
+      ],
+      "cross_track_m": 1.01,
+      "progress": 1.0
+    },
+    {
+      "t": 9.2,
+      "pos": [
+        14.61,
+        -0.79,
+        0.98
+      ],
+      "cross_track_m": 0.79,
+      "progress": 0.97
+    },
+    {
+      "t": 12.2,
+      "pos": [
+        14.27,
+        0.68,
+        0.9
+      ],
+      "cross_track_m": 0.69,
+      "progress": 0.95
+    },
+    {
+      "t": 15.3,
+      "pos": [
+        15.86,
+        0.44,
+        0.97
+      ],
+      "cross_track_m": 0.96,
+      "progress": 1.0
+    },
+    {
+      "t": 18.3,
+      "pos": [
+        14.08,
+        0.5,
+        0.01
+      ],
+      "cross_track_m": 1.11,
+      "progress": 0.94
+    },
+    {
+      "t": 21.3,
+      "pos": [
+        14.08,
+        0.5,
+        0.01
+      ],
+      "cross_track_m": 1.11,
+      "progress": 0.94
+    },
+    {
+      "t": 24.2,
+      "pos": [
+        14.08,
+        0.5,
+        0.01
+      ],
+      "cross_track_m": 1.11,
+      "progress": 0.94
+    },
+    {
+      "t": 27.2,
+      "pos": [
+        14.08,
+        0.5,
+        0.01
+      ],
+      "cross_track_m": 1.11,
+      "progress": 0.94
+    },
+    {
+      "t": 30.2,
+      "pos": [
+        14.08,
+        0.5,
+        0.01
+      ],
+      "cross_track_m": 1.11,
+      "progress": 0.94
+    },
+    {
+      "t": 33.2,
+      "pos": [
+        14.08,
+        0.5,
+        0.01
+      ],
+      "cross_track_m": 1.11,
+      "progress": 0.94
+    },
+    {
+      "t": 36.1,
+      "pos": [
+        14.08,
+        0.5,
+        0.01
+      ],
+      "cross_track_m": 1.11,
+      "progress": 0.94
+    },
+    {
+      "t": 39.1,
+      "pos": [
+        14.08,
+        0.5,
+        0.01
+      ],
+      "cross_track_m": 1.11,
+      "progress": 0.94
+    },
+    {
+      "t": 42.1,
+      "pos": [
+        14.08,
+        0.5,
+        0.01
+      ],
+      "cross_track_m": 1.11,
+      "progress": 0.94
+    },
+    {
+      "t": 45.0,
+      "pos": [
+        14.08,
+        0.5,
+        0.01
+      ],
+      "cross_track_m": 1.11,
+      "progress": 0.94
+    },
+    {
+      "t": 48.0,
+      "pos": [
+        14.08,
+        0.5,
+        0.01
+      ],
+      "cross_track_m": 1.11,
+      "progress": 0.94
+    },
+    {
+      "t": 51.0,
+      "pos": [
+        14.08,
+        0.5,
+        0.01
+      ],
+      "cross_track_m": 1.11,
+      "progress": 0.94
+    },
+    {
+      "t": 54.0,
+      "pos": [
+        14.08,
+        0.5,
+        0.01
+      ],
+      "cross_track_m": 1.11,
+      "progress": 0.94
+    },
+    {
+      "t": 56.9,
+      "pos": [
+        14.08,
+        0.5,
+        0.01
+      ],
+      "cross_track_m": 1.11,
+      "progress": 0.94
+    },
+    {
+      "t": 59.9,
+      "pos": [
+        14.08,
+        0.5,
+        0.01
+      ],
+      "cross_track_m": 1.11,
+      "progress": 0.94
+    },
+    {
+      "t": 59.9,
+      "pos": [
+        14.08,
+        0.5,
+        0.01
+      ],
+      "cross_track_m": 1.11,
+      "progress": 0.94
+    }
+  ]
+}
