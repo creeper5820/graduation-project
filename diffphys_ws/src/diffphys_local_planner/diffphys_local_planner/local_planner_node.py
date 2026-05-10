@@ -237,18 +237,22 @@ class DiffPhysLocalPlanner(Node):
         goal_dir = self.waypoints[-1] - self.odom_pos if self.waypoints else np.zeros(3)
         dist_goal = np.linalg.norm(goal_dir)
 
-        if dist_goal < 0.5:
+        if dist_goal < 1.5:
             self.get_logger().info('Goal reached, hovering')
             self.waypoints = []
-        yaw = np.arctan2(goal_dir[1], goal_dir[0]) if dist_goal > 0.1 else self.last_yaw
-        max_yaw_change = np.pi * 0.01
-        dyaw = yaw - self.last_yaw
-        if dyaw > np.pi:
-            dyaw -= 2 * np.pi
-        elif dyaw < -np.pi:
-            dyaw += 2 * np.pi
-        dyaw = np.clip(dyaw, -max_yaw_change, max_yaw_change)
-        yaw = self.last_yaw + dyaw
+
+        if self.waypoints:
+            yaw = np.arctan2(goal_dir[1], goal_dir[0])
+            max_yaw_change = np.pi * 0.05
+            dyaw = yaw - self.last_yaw
+            if dyaw > np.pi:
+                dyaw -= 2 * np.pi
+            elif dyaw < -np.pi:
+                dyaw += 2 * np.pi
+            dyaw = np.clip(dyaw, -max_yaw_change, max_yaw_change)
+            yaw = self.last_yaw + dyaw
+        else:
+            yaw = self.last_yaw
 
         cmd.yaw = float(yaw)
         cmd.yaw_dot = float((yaw - self.last_yaw) / 0.005)
