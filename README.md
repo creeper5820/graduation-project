@@ -1,4 +1,4 @@
-# DiffPhysDrone ROS2 仿真平台
+# DiffPhysDrone ROS2 仿真
 
 基于 EGO-Planner 的 ROS2 四旋翼仿真环境，集成了 DiffPhysDrone 深度学习本地规划器，支持 Foxglove 实时可视化和闭环轨迹验证。
 
@@ -153,8 +153,6 @@ so3_control 根据 `PositionCommand` 计算期望力和姿态：
 force = mg + kx*(pos_err) + kv*(vel_err) + mass*acc_feedforward
 ```
 
-姿态由力方向决定。**roll 被限制**（投影 body Y 到水平面），只允许 yaw 和 pitch 运动。
-
 ### 仿真参数
 
 | 参数 | 值 | 说明 |
@@ -200,18 +198,6 @@ force = mg + kx*(pos_err) + kv*(vel_err) + mass*acc_feedforward
 **问题：** 模型输出的侧向加速度导致大幅 roll，影响深度图质量。
 
 **解决：** 在 SO3Control 中投影 body Y 轴到水平面，强制 roll=0，只保留 yaw 和 pitch。
-
-### 6. 增益修改导致无人机卡住
-
-**问题：** `gains/ang/z` 从 0.1 被改为 0.3（惯量测试遗留），导致纯圆环障碍物下无人机无法导航。
-
-**解决：** 恢复 `gains/ang/z=0.1`。
-
-### 7. 仓库过大（163MB）
-
-**问题：** 首次提交误包含 `build/` 目录，产生 972MB 悬空对象。
-
-**解决：** `git reflog expire --expire=now --all && git gc --prune=now --aggressive` 清理。
 
 ## 常用命令
 
