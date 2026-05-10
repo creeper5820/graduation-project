@@ -1,254 +1,254 @@
 {
-  "total_samples": 59588,
-  "duration_s": 60.0,
+  "total_samples": 60254,
+  "duration_s": 60.5,
   "start_position": [
-    10.64,
-    0.6,
-    1.08
+    11.13,
+    0.64,
+    1.0
   ],
   "final_position": [
-    10.93,
-    -1.9,
-    0.08
+    14.64,
+    0.75,
+    0.88
   ],
-  "flight_distance": 9.25,
-  "avg_speed": 0.154,
+  "flight_distance": 3.54,
+  "avg_speed": 0.059,
   "goal_position": [
     15.0,
     0.0,
     1.0
   ],
-  "goal_distance": 4.58,
-  "goal_reached": false,
-  "mean_cross_track_m": 0.279,
-  "max_cross_track_m": 1.771,
-  "median_cross_track_m": 0.0,
-  "final_progress": 1.0,
-  "max_progress": 1.0,
-  "path_length_m": 4.24,
-  "path_heading_rad": -2.713,
-  "drone_heading_rad": -2.648,
-  "heading_error_rad": 0.065,
+  "goal_distance": 0.84,
+  "goal_reached": true,
+  "mean_cross_track_m": 0.76,
+  "max_cross_track_m": 0.779,
+  "median_cross_track_m": 0.761,
+  "final_progress": 0.976,
+  "max_progress": 0.976,
+  "path_length_m": 15.0,
+  "path_heading_rad": 0.0,
+  "drone_heading_rad": -0.534,
+  "heading_error_rad": 0.534,
   "trajectory_samples": [
     {
       "t": 0.0,
       "pos": [
-        10.64,
-        0.6,
-        1.08
+        11.13,
+        0.64,
+        1.0
       ],
-      "cross_track_m": 1.77,
-      "progress": 0.83
+      "cross_track_m": 0.64,
+      "progress": 0.74
     },
     {
       "t": 3.0,
       "pos": [
-        14.58,
-        0.76,
-        0.91
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.0,
-      "progress": 0.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 6.0,
+      "t": 6.1,
       "pos": [
-        14.58,
-        0.76,
-        0.91
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.0,
-      "progress": 0.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 9.0,
+      "t": 9.1,
       "pos": [
-        14.58,
-        0.76,
-        0.91
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.0,
-      "progress": 0.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 12.0,
+      "t": 12.1,
       "pos": [
-        14.58,
-        0.76,
-        0.91
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.0,
-      "progress": 0.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 15.0,
+      "t": 15.1,
       "pos": [
-        14.58,
-        0.76,
-        0.91
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.0,
-      "progress": 0.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 18.0,
+      "t": 18.1,
       "pos": [
-        14.58,
-        0.76,
-        0.91
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.0,
-      "progress": 0.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 21.0,
+      "t": 21.1,
       "pos": [
-        14.58,
-        0.76,
-        0.91
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.0,
-      "progress": 0.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 24.0,
+      "t": 24.2,
       "pos": [
-        14.58,
-        0.76,
-        0.91
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.0,
-      "progress": 0.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 27.0,
+      "t": 27.2,
       "pos": [
-        14.58,
-        0.76,
-        0.91
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.0,
-      "progress": 0.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 30.0,
+      "t": 30.2,
       "pos": [
-        14.58,
-        0.76,
-        0.91
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.0,
-      "progress": 0.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 33.0,
+      "t": 33.2,
       "pos": [
-        14.58,
-        0.76,
-        0.91
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.0,
-      "progress": 0.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 36.0,
+      "t": 36.3,
       "pos": [
-        14.58,
-        0.76,
-        0.91
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.0,
-      "progress": 0.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 39.0,
+      "t": 39.3,
       "pos": [
-        14.58,
-        0.76,
-        0.91
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.0,
-      "progress": 0.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 42.0,
+      "t": 42.3,
       "pos": [
-        14.58,
-        0.76,
-        0.91
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.0,
-      "progress": 0.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 45.0,
+      "t": 45.4,
       "pos": [
-        10.93,
-        -1.89,
-        0.08
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.94,
-      "progress": 1.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 48.0,
+      "t": 48.4,
       "pos": [
-        10.93,
-        -1.9,
-        0.08
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.94,
-      "progress": 1.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 51.0,
+      "t": 51.4,
       "pos": [
-        10.93,
-        -1.9,
-        0.08
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.94,
-      "progress": 1.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 54.0,
+      "t": 54.4,
       "pos": [
-        10.93,
-        -1.9,
-        0.08
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.94,
-      "progress": 1.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 57.0,
+      "t": 57.4,
       "pos": [
-        10.93,
-        -1.9,
-        0.08
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.94,
-      "progress": 1.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 60.0,
+      "t": 60.5,
       "pos": [
-        10.93,
-        -1.9,
-        0.08
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.94,
-      "progress": 1.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     },
     {
-      "t": 60.0,
+      "t": 60.5,
       "pos": [
-        10.93,
-        -1.9,
-        0.08
+        14.64,
+        0.75,
+        0.88
       ],
-      "cross_track_m": 0.94,
-      "progress": 1.0
+      "cross_track_m": 0.76,
+      "progress": 0.98
     }
   ]
 }

@@ -169,7 +169,7 @@ def generate_launch_description():
         )
 
     poscmd_2_odom_node = Node(
-        package='poscmd_2_odom',
+        package='fake_drone',
         executable='poscmd_2_odom',
         name=['drone_', drone_id, '_poscmd_2_odom'],
         output='screen',
