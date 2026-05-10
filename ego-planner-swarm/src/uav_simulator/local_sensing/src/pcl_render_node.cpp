@@ -383,13 +383,14 @@ void render_currentpose()
   tfs.transform.rotation.w = cam2world_quat.w();
   br.sendTransform(tfs);
 
-  // 发布伪彩色图像信息（近黑远白，转置让可视化摆正）
+  // 发布伪彩色图像信息（近黑远白，转置+翻转让可视化摆正）
   cv::Mat adjMap;
   depth_mat.convertTo(adjMap, CV_8UC1, 255 / 13.0, -min);
   cv::Mat gray3c;
   cv::cvtColor(adjMap, gray3c, cv::COLOR_GRAY2BGR);
   cv::Mat gray3c_t;
   cv::transpose(gray3c, gray3c_t);
+  cv::flip(gray3c_t, gray3c_t, 0);
 
   cv_bridge::CvImage cv_image_colored;
   cv_image_colored.header.frame_id = "camera";
