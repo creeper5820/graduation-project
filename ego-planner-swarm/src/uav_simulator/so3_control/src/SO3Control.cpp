@@ -107,8 +107,21 @@ void SO3Control::calculateControl(const Eigen::Vector3d &des_pos,
   b1c.noalias() = b2c.cross(b3c).normalized();  // 通过叉积计算第一个基向量
 
   Eigen::Matrix3d R;
-  R << b1c, b2c, b3c;  // 构造旋转矩阵
-  orientation_ = Eigen::Quaterniond(R);  // 将旋转矩阵转换为四元数
+  R << b1c, b2c, b3c;
+
+  // 限制 roll：允许 ±10°，保留 yaw 和 pitch
+  double roll  = atan2(R(2,1), R(2,2));
+  double pitch = asin(-std::clamp(R(2,0), -1.0, 1.0));
+  double yaw   = atan2(R(1,0), R(0,0));
+  double max_roll = 10.0 * M_PI / 180.0;
+  roll = std::clamp(roll, -max_roll, max_roll);
+
+  Eigen::Matrix3d R_clamped;
+  R_clamped = Eigen::AngleAxisd(yaw,   Eigen::Vector3d::UnitZ()) *
+              Eigen::AngleAxisd(pitch, Eigen::Vector3d::UnitY()) *
+              Eigen::AngleAxisd(roll,  Eigen::Vector3d::UnitX());
+
+  orientation_ = Eigen::Quaterniond(R_clamped);
 }
 
 const Eigen::Vector3d &
